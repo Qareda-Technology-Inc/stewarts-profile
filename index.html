@@ -12,148 +12,267 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="top-nav">
+        <div class="nav-content">
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="hero-section">
         <header>
-            <h1>TekGen Solutions</h1>
-            <p class="tagline">Complete Computer Services, Sales & Repair</p>
+            <div class="logo-title">
+                <img src="./images/logo.png" alt="TekGen Solutions Logo" class="site-logo">
+                <div>
+                    <h1>TekGen Solutions</h1>
+                    <p class="tagline">Complete Computer Services, Sales & Repair</p>
+                </div>
+            </div>
         </header>
-
-        <main>
-            <section class="profile-card">
-                <div class="profile-header">
-                    <img src="./images/stewarts.jpg" alt="Profile Photo" class="profile-photo">
-                    <div class="profile-info">
-                        <h2>Heinrich Bejele</h2>
-                        <p>IT Specialist & Entrepreneur</p>
-                        
-                        <div class="mission-statement">
-                            <h3>Mission</h3>
-                            <p>To empower businesses with cutting-edge technology solutions that drive growth and efficiency in the digital landscape.</p>
+    </section>
+    <div class="container">
+        <div class="content-wrapper">
+            <main>
+                <section id="about" class="section-card" data-section="about">
+                    <div class="profile-header">
+                        <img src="./images/stewarts.jpg" alt="Profile Photo" class="profile-photo">
+                        <div class="profile-info">
+                            <h2>Heinrich Stewart Bejele</h2>
+                            <p>IT Specialist & Entrepreneur</p>
+                            
+                            <div class="mission-statement">
+                                <h3>Mission</h3>
+                                <p>To empower businesses with cutting-edge technology solutions that drive growth and efficiency in the digital landscape.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <h3>About</h3>
-                <p>With over 10 years of experience in the IT industry, I specialize in network infrastructure, security systems, and web development. My passion is helping businesses leverage technology to solve real-world problems.</p>
-                
-                <h3>Profile</h3>
-                <p>Certified network engineer and web developer with expertise in CCTV systems, GPS installations, and IoT solutions. Committed to delivering exceptional service and building long-term client relationships.</p>
-            </section>
+                    <h3>About</h3>
+                    <p>With over 10 years of experience in the IT industry, I specialize in network infrastructure, security systems, and web development. My passion is helping businesses leverage technology to solve real-world problems.</p>
+                    
+                    <h3>Profile</h3>
+                    <p>Certified network engineer and web developer with expertise in CCTV systems, GPS installations, and IoT solutions. Committed to delivering exceptional service and building long-term client relationships.</p>
+                </section>
 
-            <section id="contacts">
-                <h2>Contact Information</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                        <span>heinrich@tekgensolutions.com</span>
+                <section id="contacts" class="section-card" data-section="contacts">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon-round contact-icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:eminer983@gmail.com">eminer983@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-round contact-icon"><i class="fas fa-phone"></i></span>
+                            <a href="tel:+233200233520">+233 (020) 233-9520</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-round contact-icon"><i class="fab fa-whatsapp"></i></span>
+                            <a href="https://wa.me/233200233520" target="_blank">Chat on WhatsApp</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-round contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Tarkwa, Ghana</span>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                        <span>+233 (055) 052-8864 | +233 (020) 233-9520</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span>Accra, Ghana</span>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="services">
-                <h2>Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Computer literacy training</span>
+                <section id="services" class="section-card" data-section="services">
+                    <h2>Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Computer literacy training</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Network surveys</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Cable installation</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Camera installation</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>GPS installation</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Web Design</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Computer Repairs</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Graphics Design</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>IOT services</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Network infrastructure setup</span>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Network surveys</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Cable installation</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Camera installation</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>GPS installation</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Web Design</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Computer Repairs</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Graphics Design</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>IOT services</span>
-                    </div>
-                    <div class="service-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Network infrastructure setup</span>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="products">
-                <h2>Sales of Products</h2>
-                <div class="products-grid">
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Cameras (CCTV)</span>
+                <section id="products" class="section-card" data-section="products">
+                    <h2>Sales of Products</h2>
+                    <!-- Flash Sales Slider -->
+                    <div class="flash-sales-slider">
+                      <div class="slider-wrapper">
+                        <div class="slider-card slider-image">
+                          <img src="./images/camera.png" alt="CCTV Camera">
+                          <div class="slider-info">
+                            <h3>CCTV Camera</h3>
+                            <p class="slider-price">GHS 350.00</p>
+                            <button class="slider-buy">Buy Now</button>
+                          </div>
+                        </div>
+                        <div class="slider-card slider-image">
+                          <img src="./images/network-cable.jpeg" alt="Network Cable">
+                          <div class="slider-info">
+                            <h3>Network Cable</h3>
+                            <p class="slider-price">GHS 45.00</p>
+                            <button class="slider-buy">Buy Now</button>
+                          </div>
+                        </div>
+                        <div class="slider-card slider-image">
+                          <img src="./images/router.jpg" alt="Router">
+                          <div class="slider-info">
+                            <h3>Router</h3>
+                            <p class="slider-price">GHS 250.00</p>
+                            <button class="slider-buy">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-controls">
+                        <button class="slider-prev">&#10094;</button>
+                        <button class="slider-next">&#10095;</button>
+                      </div>
                     </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Network Cables</span>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Cameras (CCTV)</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Network Cables</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Network Connectors</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Network Radios</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>GPS systems</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Switches</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Routers</span>
+                        </div>
+                        <div class="product-item">
+                            <span class="checkmark"><i class="fas fa-check"></i></span>
+                            <span>Computer accessories</span>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Network Connectors</span>
+                    <!-- Order/Request Form -->
+                    <div class="order-form-section section-card" id="order" data-section="order">
+                      <h3>Order/Request Product</h3>
+                      <form class="order-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="product" placeholder="Product Name" required>
+                        <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+                        <textarea name="message" placeholder="Additional Message" rows="3"></textarea>
+                        <button type="submit">Send Request</button>
+                      </form>
                     </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Network Radios</span>
-                    </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>GPS systems</span>
-                    </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Switches</span>
-                    </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Routers</span>
-                    </div>
-                    <div class="product-item">
-                        <span class="checkmark"><i class="fas fa-check"></i></span>
-                        <span>Computer accessories</span>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 TekGen Solutions. All rights reserved.</p>
-            <p>JohnCode | QaretechInnovative | BejeleStudio</p>
-            <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </footer>
+                </section>
+            </main>
+        </div>
     </div>
+
+    <!-- Add slider script -->
+    <script>
+    const sliderCards = document.querySelectorAll('.slider-card');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    let currentIndex = 0;
+    function showCard(index) {
+      sliderCards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+    }
+    showCard(currentIndex);
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + sliderCards.length) % sliderCards.length;
+      showCard(currentIndex);
+    });
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % sliderCards.length;
+      showCard(currentIndex);
+    });
+    // Auto-advance slider
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % sliderCards.length;
+      showCard(currentIndex);
+    }, 3500);
+    // Order form handler (just shows alert for now)
+    document.querySelector('.order-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your request! We will contact you soon.');
+      this.reset();
+    });
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.top-nav ul');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+    </script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#" class="icon-round social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon-round social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-round social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-round social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/233200233520" class="icon-round social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@ping_labs" class="icon-round social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-text">
+                <p>© 2025 TekGen Solutions. All rights reserved.</p>
+                <p>JohnCode | QaretechInnovative | BejeleStudio</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
